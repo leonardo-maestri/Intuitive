@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "1d4a15d3-ab15-4d8a-ad3c-ff5fe8b84a17",
+		"name": "API Operadoras de Saúde",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43597290",
+		"_collection_link": "https://leonardomaestricintra.postman.co/workspace/Leonardo-Maestri-Cintra's-Works~f7de6922-1568-47fd-8d23-bd650ef333b2/collection/43597290-1d4a15d3-ab15-4d8a-ad3c-ff5fe8b84a17?action=share&source=collection_link&creator=43597290"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=amil&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "amil"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
