@@ -10,13 +10,13 @@ ZIP_NAME = os.path.join(DIR_DOWNLOADS, "anexos.zip")
 
 
 def baixar_pdf(url, nome_arquivo):
-    """Baixa um PDF e verifica se está íntegro."""
+    #Baixando PDF
     resposta = requests.get(url, stream=True)
     if resposta.status_code == 200:
         caminho_arquivo = os.path.join(DIR_DOWNLOADS, nome_arquivo)
         with open(caminho_arquivo, 'wb') as f:
             f.write(resposta.content)
-        # Verifica se o PDF não está corrompido (tamanho > 10 KB)
+        # Verificando se o PDF não está corrompido (tamanho > 10 KB)
         if os.path.getsize(caminho_arquivo) > 10 * 1024:
             print(f"Download OK: {nome_arquivo}")
             return True
