@@ -1,4 +1,4 @@
-# 📌 Projeto ANS - Pipeline de Dados Completo
+#  Projeto INTUITIVE
 
 Automatiza a coleta, processamento e disponibilização de dados de operadoras de saúde.
 
